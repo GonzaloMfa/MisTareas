@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="text View"
+        android:layout_alignBaseline="@+id/btnEditar"/>
+
+    <ImageButton
+        android:id="@+id/btnEditar"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="250dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/clipboard"
+        android:onClick="actualizar"
+        android:text="@string/terminado" />
+
+    <ImageButton
+        android:id="@+id/btnBorrar"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="borrarTarea"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/rubbish"
+        android:text="@string/terminado" />
+</RelativeLayout>
